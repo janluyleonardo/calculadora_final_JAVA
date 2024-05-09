@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package calculadora_final;
 
-/**
- *
- * @author leoxi
- */
 public class calculadora_interface extends javax.swing.JFrame {
 
     /**
@@ -16,6 +8,7 @@ public class calculadora_interface extends javax.swing.JFrame {
      */
     public calculadora_interface() {
         initComponents();
+        this.setLocationRelativeTo(this);
     }
     String numero1 = "";
     String numero2 = "";
@@ -31,6 +24,7 @@ public class calculadora_interface extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         num2 = new javax.swing.JButton();
         num1 = new javax.swing.JButton();
         num3 = new javax.swing.JButton();
@@ -53,11 +47,21 @@ public class calculadora_interface extends javax.swing.JFrame {
         etiqueta3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        sumar1 = new javax.swing.JButton();
         raiz = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setMaximumSize(new java.awt.Dimension(270, 330));
+        setMinimumSize(new java.awt.Dimension(270, 330));
+        setPreferredSize(new java.awt.Dimension(270, 330));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setMaximumSize(new java.awt.Dimension(270, 330));
+        jPanel1.setMinimumSize(new java.awt.Dimension(270, 330));
+        jPanel1.setPreferredSize(new java.awt.Dimension(270, 330));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         num2.setBackground(new java.awt.Color(153, 255, 153));
         num2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -69,7 +73,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num2ActionPerformed(evt);
             }
         });
-        getContentPane().add(num2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 30, 30));
+        jPanel1.add(num2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 30, 30));
 
         num1.setBackground(new java.awt.Color(153, 255, 153));
         num1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -81,7 +85,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num1ActionPerformed(evt);
             }
         });
-        getContentPane().add(num1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 30, 30));
+        jPanel1.add(num1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 30, 30));
 
         num3.setBackground(new java.awt.Color(153, 255, 153));
         num3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -93,7 +97,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num3ActionPerformed(evt);
             }
         });
-        getContentPane().add(num3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 30, 30));
+        jPanel1.add(num3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 30, 30));
 
         num5.setBackground(new java.awt.Color(153, 255, 153));
         num5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -105,7 +109,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num5ActionPerformed(evt);
             }
         });
-        getContentPane().add(num5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 30, 30));
+        jPanel1.add(num5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 30, 30));
 
         num4.setBackground(new java.awt.Color(153, 255, 153));
         num4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -117,7 +121,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num4ActionPerformed(evt);
             }
         });
-        getContentPane().add(num4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 30, 30));
+        jPanel1.add(num4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 30, 30));
 
         num6.setBackground(new java.awt.Color(153, 255, 153));
         num6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -129,7 +133,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num6ActionPerformed(evt);
             }
         });
-        getContentPane().add(num6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 30, 30));
+        jPanel1.add(num6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 30, 30));
 
         num8.setBackground(new java.awt.Color(153, 255, 153));
         num8.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -141,7 +145,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num8ActionPerformed(evt);
             }
         });
-        getContentPane().add(num8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 30, 30));
+        jPanel1.add(num8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 30, 30));
 
         num7.setBackground(new java.awt.Color(153, 255, 153));
         num7.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -153,7 +157,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num7ActionPerformed(evt);
             }
         });
-        getContentPane().add(num7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 30, 30));
+        jPanel1.add(num7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 30, 30));
 
         num9.setBackground(new java.awt.Color(153, 255, 153));
         num9.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -165,7 +169,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num9ActionPerformed(evt);
             }
         });
-        getContentPane().add(num9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 30, 30));
+        jPanel1.add(num9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 30, 30));
 
         num0.setBackground(new java.awt.Color(153, 255, 153));
         num0.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -177,7 +181,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 num0ActionPerformed(evt);
             }
         });
-        getContentPane().add(num0, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 30, 30));
+        jPanel1.add(num0, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 30, 30));
 
         punto.setBackground(new java.awt.Color(255, 204, 51));
         punto.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -189,7 +193,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 puntoActionPerformed(evt);
             }
         });
-        getContentPane().add(punto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 30, 30));
+        jPanel1.add(punto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 30, 30));
 
         borrar.setBackground(new java.awt.Color(255, 204, 51));
         borrar.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -201,7 +205,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 borrarActionPerformed(evt);
             }
         });
-        getContentPane().add(borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 30, 30));
+        jPanel1.add(borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 30, 30));
 
         sumar.setBackground(new java.awt.Color(255, 204, 51));
         sumar.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -213,7 +217,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 sumarActionPerformed(evt);
             }
         });
-        getContentPane().add(sumar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 30, 30));
+        jPanel1.add(sumar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 30, 30));
 
         restar.setBackground(new java.awt.Color(255, 204, 51));
         restar.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -225,7 +229,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 restarActionPerformed(evt);
             }
         });
-        getContentPane().add(restar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 30, 30));
+        jPanel1.add(restar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 30, 30));
 
         multiplicar.setBackground(new java.awt.Color(255, 204, 51));
         multiplicar.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -237,7 +241,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 multiplicarActionPerformed(evt);
             }
         });
-        getContentPane().add(multiplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 30, 30));
+        jPanel1.add(multiplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 30, 30));
 
         dividir.setBackground(new java.awt.Color(255, 204, 51));
         dividir.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
@@ -249,7 +253,7 @@ public class calculadora_interface extends javax.swing.JFrame {
                 dividirActionPerformed(evt);
             }
         });
-        getContentPane().add(dividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 30, 30));
+        jPanel1.add(dividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 30, 30));
 
         resultado.setBackground(new java.awt.Color(0, 204, 204));
         resultado.setForeground(new java.awt.Color(0, 51, 255));
@@ -259,41 +263,34 @@ public class calculadora_interface extends javax.swing.JFrame {
                 resultadoActionPerformed(evt);
             }
         });
-        getContentPane().add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, -1, 110));
+        jPanel1.add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, -1, 110));
 
         etiqueta1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        etiqueta1.setForeground(new java.awt.Color(153, 255, 153));
         etiqueta1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(etiqueta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 180, 20));
+        jPanel1.add(etiqueta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 180, 20));
 
         etiqueta2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        etiqueta2.setForeground(new java.awt.Color(153, 255, 153));
         etiqueta2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        getContentPane().add(etiqueta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 180, 20));
+        jPanel1.add(etiqueta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 180, 20));
 
         etiqueta3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        etiqueta3.setForeground(new java.awt.Color(153, 255, 153));
         etiqueta3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        getContentPane().add(etiqueta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 180, 20));
+        jPanel1.add(etiqueta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 180, 20));
 
-        jLabel5.setBackground(new java.awt.Color(255, 255, 204));
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 255, 204));
         jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 200, 80));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 200, 80));
 
+        jLabel1.setBackground(new java.awt.Color(51, 51, 255));
+        jLabel1.setForeground(new java.awt.Color(51, 102, 255));
         jLabel1.setText("CALCULADORA BASICA");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
-
-        sumar1.setBackground(new java.awt.Color(255, 204, 51));
-        sumar1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
-        sumar1.setForeground(new java.awt.Color(0, 51, 255));
-        sumar1.setText("+");
-        sumar1.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        sumar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sumar1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(sumar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 30, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
 
         raiz.setBackground(new java.awt.Color(255, 204, 51));
         raiz.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
@@ -304,7 +301,9 @@ public class calculadora_interface extends javax.swing.JFrame {
                 raizActionPerformed(evt);
             }
         });
-        getContentPane().add(raiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 40, 30));
+        jPanel1.add(raiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 40, 30));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 320));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -377,7 +376,9 @@ public class calculadora_interface extends javax.swing.JFrame {
         if(!etiqueta3.getText().equals("") || contador != 0){
             operaciones();
             etiqueta2.setText("+");
-            
+        }else{
+            operaciones();
+            etiqueta2.setText("+");
         }
     }//GEN-LAST:event_sumarActionPerformed
 
@@ -408,10 +409,6 @@ public class calculadora_interface extends javax.swing.JFrame {
             etiqueta2.setText("");
         }
     }//GEN-LAST:event_resultadoActionPerformed
-
-    private void sumar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sumar1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sumar1ActionPerformed
 
     private void raizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_raizActionPerformed
         if(!etiqueta3.getText().equals("") || contador != 0){
@@ -472,6 +469,7 @@ public class calculadora_interface extends javax.swing.JFrame {
     private javax.swing.JLabel etiqueta3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton multiplicar;
     private javax.swing.JButton num0;
     private javax.swing.JButton num1;
@@ -488,6 +486,5 @@ public class calculadora_interface extends javax.swing.JFrame {
     private javax.swing.JButton restar;
     private javax.swing.JButton resultado;
     private javax.swing.JButton sumar;
-    private javax.swing.JButton sumar1;
     // End of variables declaration//GEN-END:variables
 }
